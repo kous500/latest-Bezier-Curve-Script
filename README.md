@@ -1,6 +1,6 @@
 # BezierCurveScript-Minecraft1.19
  
-本スクリプトは[曲線建築スクリプト](https://www.nicovideo.jp/watch/sm31993546)をMinecraft1.19上で動作可能になるように改変したものです。
+本スクリプトは[ベジエ曲線スクリプト](https://www.nicovideo.jp/watch/sm31993546)をMinecraft1.19上で動作可能になるように改変したものです。
 
 本スクリプトは改変を伴う再配布であり、配布者は元のスクリプトの製作者とは異なります。
 
