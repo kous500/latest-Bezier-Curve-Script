@@ -8,7 +8,7 @@ Copyright　©2017 BezierCurveScriptU1.0　by Mckeee
 */
 
 //パラメータの設定,parameter option
-var fine = 2000;//細かさ,fineness
+var fine = 1000;//細かさ,fineness
 var reg = 100;//制御点の捜索範囲,search renge
 var replID = "minecraft:glass";//制御点の置き換えブロック名,control point replace
 //制御点ブロック名,control point name
