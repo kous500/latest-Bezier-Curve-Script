@@ -27,7 +27,7 @@ function addVec(vec , x , y , z){
 
 var sess = context.remember();
 var session = context.getSession();
-var region = session.getSelection();
+var region = session.getSelection(session.getSelectionWorld());
 var origin = vecToBlockvec(player.getLocation());
 var PlayerPos = player.getLocation();
 var staPos = region.getPos1();
