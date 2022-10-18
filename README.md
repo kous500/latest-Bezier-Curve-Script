@@ -1,4 +1,4 @@
-# BezierCurveScript-Minecraft1.19
+# BezierCurveScript (Minecraft1.14.x-1.19.x)
  
 ## YouTube
 
