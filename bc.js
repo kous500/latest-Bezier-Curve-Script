@@ -2,7 +2,7 @@ importPackage(Packages.com.sk89q.worldedit.blocks);
 importPackage(Packages.com.sk89q.worldedit.region);
 importPackage(Packages.com.sk89q.worldedit.math);
 
-/*BezierCurveScript(modified version)
+/*BezierCurveScript(modified by kous, translated by towatti1009)
 Twitter:@Minecraft_City
 Copyright　©2017 BezierCurveScriptU1.0　by Mckeee
 */
@@ -50,21 +50,21 @@ for (var x = -reg; x <= reg; x++) {
 			
 			if((id == pos1ID)&&(pos1 == null)) {
 				pos1 = pt;
-                player.print("found p1 at "+pos1);
+                player.print("選択地点1 " + pos1 + " を検知しました。");
 			}
 			else if((id == pos2ID)&&(pos2 == null)) {
 				pos2 = pt;
-                player.print("found p2 at "+pos2);
+                player.print("選択地点2 " + pos2 + " を検知しました。");
 				
 			}
 			else if((id == pos3ID)&&(pos3 == null)) {
 				pos3 = pt;
-                player.print("found p3 at "+pos3);
+                player.print("選択地点3 " + pos3 + " を検知しました。");
 				
 			}
 			else if((id == pos4ID)&&(pos4 == null)) {
 				pos4 = pt;
-                player.print("found p4 at "+pos4);
+                player.print("選択地点4 " + pos4 + " を検知しました。");
 				
 			}
 			
@@ -75,14 +75,14 @@ for (var x = -reg; x <= reg; x++) {
     }
 }
 if(((pos1 == null)||(pos2 == null)||(pos3 == null)||(pos4 == null))&&((arg3 != "line")&&(arg4 != "line")&&(arg5 != "line")&&(arg6 != "line"))){
-	if(pos1 == null)player.print("\u00A7cError: cannot find p1");
-	if(pos2 == null)player.print("\u00A7cError: cannot find p2");
-	if(pos3 == null)player.print("\u00A7cError: cannot find p3");
-	if(pos4 == null)player.print("\u00A7cError: cannot find p4");
+	if(pos1 == null)player.print("\u00A7c選択地点1を検知することができません。");
+	if(pos2 == null)player.print("\u00A7c選択地点2を検知することができません。");
+	if(pos3 == null)player.print("\u00A7c選択地点3を検知することができません。");
+	if(pos4 == null)player.print("\u00A7c選択地点4を検知することができません。");
 }
 else if(((pos1 == null)||(pos4 == null))&&((arg3 == "line")||(arg4 == "line")||(arg5 == "line")||(arg6 == "line"))){
-	if(pos1 == null)player.print("\u00A7cError: cannot find p1");
-	if(pos4 == null)player.print("\u00A7cError: cannot find p4");
+	if(pos1 == null)player.print("\u00A7c選択地点1を検知することができません。");
+	if(pos4 == null)player.print("\u00A7c選択地点4を検知することができません。");
 }
 else{
 
@@ -260,7 +260,5 @@ else{
 	sess.setBlock(pos4 , context.getBlock(replID));
 }
 
-player.print("succeeded!");
-player.print("Curve length was "+ L +"m");
-
+player.print("操作が完了しました (カーブ長: " + Math.round(L*10)/10 + " m)");
 }
